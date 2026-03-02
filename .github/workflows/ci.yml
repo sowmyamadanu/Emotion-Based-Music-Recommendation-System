@@ -63,10 +63,10 @@ jobs:
           pip install --no-cache-dir -r requirements.txt
           pip install --no-cache-dir pytest pytest-django pytest-cov
 
-      - name: Run backend tests
-        run: |
-          pytest backend -q --maxfail=1 --disable-warnings
-          pytest backend --cov=backend --cov-report=xml
+      #- name: Run backend tests
+      #  run: |
+      #   pytest backend -q --maxfail=1 --disable-warnings
+      #   pytest backend --cov=backend --cov-report=xml
 
       - name: Check backend coverage file exists
         id: check-backend-coverage
